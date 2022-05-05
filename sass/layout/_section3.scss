@@ -1,0 +1,18 @@
+.container__section_socialMedia{
+    background: #2d353e;
+    @include flex_display($direction:column,$alingment:center);
+    height: 16em;
+    .container__section_socialMedia_title{
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 100;
+        color: $grisClaro;
+    }
+    .socialMedia{
+        @include flex_display($direction:row,$alingment:space-between);
+        img{
+            padding: 2em 6em;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,10 +1,24 @@
-.container__header{
-    background-image: url('/img/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
+.container__header__navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0em;
+    width: 75vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    .container__header__navbar__options{
+        @include flex_display($direction:row, $alingment: center);
+        width: 25em;
+        .navbar_options{
+            text-decoration: none;
+            padding: 0em 2em;
+            font-family: $font--family;
+            font-size: 1.2em;
+            color: $grisClaro;
+            background-color: transparent;
+            /* :hover{
+                text-decoration: underline;
+            } */
+        }
+
+    }
 }
 
-.container__header{
-    background-color: aqua;
-}

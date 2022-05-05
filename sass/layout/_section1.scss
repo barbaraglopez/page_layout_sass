@@ -1,0 +1,27 @@
+.container__header__content{
+    color: $grisClaro;
+    height: 100%;
+    width: 100vw;
+    @include flex_display($direction:column, $alingment: center);
+    padding: 2em 0em;
+    .headerContent{
+        .headerContent__title{
+            padding: 0.7em;
+        }
+        .headerContent__text{
+            padding: 0.7em;
+        }
+        .headerContent__buttonsContainer{
+            @include flex_display($direction:row, $alingment:center);
+            .buttonHeader{
+                border: 1px solid $grisClaro;
+                color: $grisClaro;
+                font-size: 20px;
+                padding: 0.5em;
+                text-decoration: $linkSinLinea;
+                margin: 1.2em;
+            }
+        }
+    }
+} 
+

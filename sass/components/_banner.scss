@@ -1,0 +1,13 @@
+.container__header__background{
+    background-image: url("/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100vw;
+}
+
+.container__header{
+    height: 100%;
+    @include flex_display($direction:column,$alingment:center);
+} 
+
